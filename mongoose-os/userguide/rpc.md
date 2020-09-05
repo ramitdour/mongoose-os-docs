@@ -98,7 +98,7 @@ Here is how you can call it:
 3</code></pre>
 
 #### Via an MQTT server, talking to an device idendified by its ID esp32_6732ac:
-<pre class="command-line language-bash" data-user="chris" data-host="localhost" data-output="2"><code>mos --port mqtt://my.mqtt.server:1883/esp32_6732ac call Sum '{"a":1, "b": 2}'
+<pre class="command-line language-bash" data-user="chris" data-host="localhost" data-output="2"><code>mos call --port mqtt://my.mqtt.server:1883/esp32_6732ac Sum '{"a":1, "b": 2}'
 3</code></pre>
 
 To see a list of all RPC services implemented by a device, call `RPC.List`:
