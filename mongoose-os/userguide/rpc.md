@@ -90,7 +90,10 @@ Here is how you can call it:
 3</code></pre>
 
 #### Via WebSocket, if a device is in the local network:
-<pre class="command-line language-bash" data-user="chris" data-host="localhost" data-output="2"><code>mos --port ws://192.168.0.206/rpc call Sum '{"a":1, "b": 2}'
+> Include `- origin: https://github.com/mongoose-os-libs/rpc-ws` in mos.yml
+> Run `mos config-set rpc.ws.enable=true` after flashing with new build.
+
+<pre class="command-line language-bash" data-user="chris" data-host="localhost" data-output="2"><code> mos call --port ws://192.168.0.206/rpc Sum '{"a":1,"b":2}'
 3</code></pre>
 
 #### Via RESTful call, if a device is in the local network:
