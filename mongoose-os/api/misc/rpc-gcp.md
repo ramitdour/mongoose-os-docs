@@ -27,7 +27,7 @@ See [here](https://cloud.google.com/iot/docs/how-tos/mqtt-bridge#publishing_tele
 `mos` supports GCP RPC mechanism through the `gcp` "port" type:
 
 ```
-$ mos --port gcp://project/region/registry/device call Sys.GetInfo
+$ mos call --port gcp://project/region/registry/device Sys.GetInfo
 {
   "app": "demo-c",
   "fw_version": "1.0",
